@@ -66,13 +66,6 @@ if (NODE_ENV === 'production' && ALGOLIA_DOCSEARCH_API_KEY && GOOGLE_ANALYTICS_I
 			'@vuepress/plugin-google-analytics',
 			{ id: GOOGLE_ANALYTICS_ID },
 		],
-		[
-			'@vuepress/plugin-pwa',
-			{ serviceWorker: true, updatePopup: {
-				message: 'New content is available on the guide!',
-				buttonText: 'Refresh'
-			}}
-		]
 	);
 }
 
